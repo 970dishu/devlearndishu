@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .parent{
+            border: 3px solid red;
+            
+            position: absolute;
+        }
+      .rel {
+        width: 10rem;
+        height: 10rem;
+        background: greenyellow;
+        margin: 1rem;
+        position: absolute;
+        border: 1px solid black;
+        
+        
+      }
+      .rel:nth-child(2) {
+        scale: 0.7;
+        bottom: 100px;
+        right: 150px;
+      }
+      .rel:nth-child(3) {
+        scale: 0.6;
+        left: 25px;
+        animation: bounce 5s ease-in-out infinite alternate, sc 5s ease-in-out infinite alternate;
+      }
+      .rel:nth-child(4) {
+        scale: 0.5;
+      }
+      @keyframes sc {
+        0%{
+          scale: 1;
+        }
+        50%{
+          scale: 1.5;
+          
+        }
+        100%{
+          
+          scale: 1;
+        }
+    }
+
+      @keyframes bounce {
+          0%{
+            bottom: 100px;
+          }
+          50%{
+            left:100px;
+            border-radius: 5rem;
+            
+          }
+          100%{
+            bottom: 200px;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- changes -->
+      <div class="rel"></div>
+      <div class="rel"></div>
+      <div class="rel"></div>
+      <div class="rel"></div>
+    </div>
+  </body>
+</html>

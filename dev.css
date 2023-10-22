@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika', sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+#nav>div {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#nav>div:nth-child(2) {
+    flex-grow: 2;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.kaanta-churi {
+    font-size: 3.5rem;
+}
+
+.logo-name-con-child {
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nav-child {
+    display: flex;
+}
+
+.navigation-con-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+.navigation-con-child>* {
+    font-weight: bolder;
+}
+
+.contact-con {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main-section{
+    display: flex;
+    margin: 0 5rem;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    gap: 1.5rem;
+
+}
+.main-section > div{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+}
+.part-con{
+    aspect-ratio: 1 !important;
+    /* overflow: hidden; */
+}
+/* .main-photo{
+    width: 100%;
+} */
+.part-con-child{
+    width: 100%;
+}
+.part-con:nth-child(1) > div{
+    flex-grow: 1;
+}
+.part-con:nth-child(2){
+    width: 50%;
+    overflow: hidden;
+
+}
+.part-con:nth-child(2) > img{
+    width: 100%;
+}
+.cta-section{
+    display: flex;
+    width: 100%;
+}
+.cta-section-child{
+    display: flex;
+    flex-grow: 1;
+    width: 50%;
+}
+.cta-section-child:nth-child(1){
+    align-items: end;
+}
+.bowl{
+    width: 100%;
+    height: 100%;
+    scale: 0.9;
+    /* aspect-ratio: 1; */
+    border-radius: 100%;
+}
+h2{
+    font-size: 4rem;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: rgb(65, 65, 65);
+}
+button{
+    color: white;
+    background: #000;
+    padding: 1rem 1.5rem;
+    font-weight: 200;
+    font-size: 1.1rem;
+    border-radius: 1.5rem;
+}

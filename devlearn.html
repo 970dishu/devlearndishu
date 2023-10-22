@@ -1,0 +1,208 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap");
+    </style>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Signika", sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      #nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 2rem 0;
+      }
+      #nav > div {
+        flex-grow: 1;
+        justify-content: center;
+        display: flex;
+      }
+
+      .unami {
+        font-size: 0.6rem;
+        font-weight: 1000;
+        letter-spacing: 2px;
+      }
+
+      .kanta-churi {
+        font-size: 3.5rem;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+      }
+      .nav-box {
+        display: flex;
+        width: 30%;
+
+        letter-spacing: 0.5px;
+        font-weight: 500;
+      }
+      .nav-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        list-style-type: none;
+      }
+      .nav-links > * {
+        font-weight: bolder;
+      }
+      .contact-con {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .main-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5rem;
+        height: 80vh;
+        overflow:hidden;
+        gap: 1.5rem;
+      }
+      .main-section > div {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;   
+        width: 50%;
+        height: 100%; 
+      }
+      .part-con{
+        aspect-ratio: 1;
+      }
+      .part-con-child{
+        width: 100%;
+      }
+      .part-con:nth-child(1)>div{
+        flex-grow: 1 ;
+
+      }
+      .part-con:nth-child(2){
+        width: 50%;
+        overflow: hidden;
+      }
+      .part-con:nth-child(2)>img{
+        width: 100%;
+      }
+      .cta-section{
+        display: flex;
+        width: 100% ;
+      }
+      .cta-section-child{
+        display: flex;
+        width: 50%;
+        flex-grow: 1;
+      }
+      .cta-section-child:nth-child(1){
+        align-items: end;
+      }
+      .cta-section>div{
+        flex-grow: 1;
+        width: 50%;
+      }
+      .bowl{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        scale: 0.9;
+      }
+      h2{
+        font-size: 4rem;
+      }
+      p{
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: rgb(74, 74, 74);
+      }
+      button{
+        color: white;
+        background: black;
+        padding: 1rem 1.5rem;
+        border-radius: 1.5rem;
+        font-weight: 200;
+        font-size: 1.1rem;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div class="nav-logo">
+        <div class="nav-logo-icon">
+          <span class="material-symbols-outlined kanta-churi">
+            restaurant_menu
+          </span>
+        </div>
+        <div class="nav-logo-name">
+          <div class="unami"><h1>UNAMI</h1></div>
+          <div class="unami"><h1>DELIGHTS</h1></div>
+        </div>
+      </div>
+      <div class="nav-box">
+        <ul class="nav-links">
+          <li>ABOUT</li>
+          <li>DELIVERY</li>
+          <li>MENU</li>
+          <li>BLOG</li>
+        </ul>
+      </div>
+      <div class="contact-con">
+        <div>+91 7696157349</div>
+        <div class="contact-con icon">
+          <span class="material-symbols-outlined"> call </span>
+        </div>
+      </div>
+    </div>
+    <div class="main-section">
+      <div class="main-child part-con">
+        <div class="part-con-child">
+          <h2>Good food is the foundation of genuine happiness</h2>
+        </div>
+        <div class="part-con-child">
+          <p>
+            At our table, every meal is a story, and every bite is a chapter
+            worth savoring.
+          </p>
+        </div>
+        <div class="part-con-child cta-section">
+          <div class="cta-section-child">
+            <button>Explore Menu</button>
+          </div>
+          <div class="cta-section-child">
+            <img class="bowl" src="bowl.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-child part-con">
+        <img src="bowl chinese.jpeg" alt="" />
+
+      </div>
+    </div>
+  </body>
+</html>

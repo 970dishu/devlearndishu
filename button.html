@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kavay{
+            width: 10rem;
+            height: 10rem;
+            background-color:black;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 1rem;
+            justify-content: center;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <button class="hide-button">Hide</button>
+    <button class="show-button">Show</button>
+    <div class="kavay">
+        <h1>HI</h1>
+    </div>
+    ‹script>
+        const ele = document.querySelector (".kavay")
+        const hidebutton = document.querySelector(".hide-button")
+        const showbutton = document.querySelector(".show-button")
+
+        hidebutton.addEventListener("click", ()=>{
+             ele.classlist.add('hide')
+        })
+        showbutton.addEventListener("click", ()=>{
+        ele.classlist.remove('hide')
+        })
+</script>
+</script>
+</body>
+</html>
