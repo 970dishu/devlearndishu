@@ -4,16 +4,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent{
+            border: 3px solid rgb(255, 255, 255);
+            position: absolute;
+        }
+        .rel{
+            width: 10rem;
+            height: 10rem;
+            background: black;
+            margin: 1rem;
+            position: absolute;
+            border: 3px solid red;
+        }
+        .rel:nth-child(1){
+            scale: 1;
+            bottom: 50px;
+            left: 50px;
+            animation: bounceup 5s ease-in-out infinite alternate , round 5s ease-in-out infinite alternate , sc 5s ease-in-out infinite alternate;
 
+        }
+        .rel:nth-child(2){
+            scale: 0.7;
+            bottom: 100px;
+            right: 100px;
+            animation: angleup 5s ease-in-out infinite alternate , round 5s ease-in-out infinite alternate , sc 5s ease-in-out infinite alternate;
+        }
+        .rel:nth-child(3){
+            scale: 0.7;
+            left: 100px;
+            top: 100px;
+            animation:  angledown 5s ease-in-out infinite alternate , round 5s ease-in-out infinite alternate , sc 5s ease-in-out infinite alternate;
+
+        }
+        .rel:nth-child(4){
+            scale: 1;
+            right: 50px;
+            top: 50px;
+            animation: bouncedown 5s ease-in-out infinite alternate , round 5s ease-in-out infinite alternate , sc 5s ease-in-out infinite alternate;
+        }
+        @keyframes sc {
+            0%{
+                scale:1;
+            }
+            50%{
+                scale: 1.5;
+            }
+            100%{
+                scale: 1;
+            }
+        }
+        @keyframes round {
+            0%{
+                border-radius: 10px;
+            }
+            50%{
+                border-radius: 100px;
+            }
+            100%{
+                border-radius: 10px;
+            }            
+        }
+        @keyframes bounceup {
+          0%{
+            bottom: 100px;
+          }
+          50%{
+            left:100px;
+            border-radius: 5rem;
+            
+          }
+          100%{
+            bottom: 200px;
+          }
+        }
+        @keyframes bouncedown {
+            0%{
+            top: 100px;
+          }
+          50%{
+            right:100px;
+            border-radius: 5rem;
+            
+          }
+          100%{
+            top: 200px;
+          }  
+        }
+        @keyframes angleup {
+            0%{
+                right: 10px;
+                bottom: 10px;
+            }
+            100%{
+                right: 100px;
+                bottom: 100px;
+            }    
+        }
+        @keyframes angledown {
+            0%{
+                left: 10px;
+                top: 10px;
+            }
+            100%{
+                left: 100px;
+                top: 100px;
+            }    
+            
+        }
     </style>
 </head>
 <body>
     <div class="parent">
-        <div class=""></div>
-        <div class="rel">hi</div>
-        <div class="rel">hi</div>
-        <div class="rel">hi</div>
-        <div class="rel">hi</div>
+        <div class="rel"></div>
+        <div class="rel"></div>
+        <div class="rel"></div>
+        <div class="rel"></div>
     </div>
     <script>
         // function add(a,b){
