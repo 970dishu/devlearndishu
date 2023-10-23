@@ -167,25 +167,27 @@
         <div class="stc"></div>
       </div>
     <script>
-      let a = [1, 2, 3, 4, 5, 6, [42, 56, 78]];
-      console.log(a[6][1]);
+        let a = [1,2,3,4,5,6,[34,43,56]]
+        console.log(a[6][1]);
 
-      let obj = {
-        name: "karan",
-        rollno: 2110990729,
-        subjects: {
-          sub1: "english",
-          sub2: "Hindi",
-        },
-        getmarks: function (a, b) {
-          console.log("get marks function is running", a + b);
-        },
-      };
-      obj.getmarks(5, 10);
-
-      document.getElementById();
-
-      console.log(obj.subjects);
+        let obj = {
+            name:"dishu",
+            number : 2310990161,
+            subjects:{
+                sub1:"english",
+                sub2:"hindi",
+            },
+            getmarks:function(){
+            console.log("get marks function is running");
+            }
+        }
+        
+        
+        obj.subjects.sub3="computers"
+        obj.getmarks()
+        console.log(obj.name);
+        console.log(obj.number);
+        console.log(obj.subjects);
     </script>
   </body>
 </html>
