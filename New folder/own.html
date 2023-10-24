@@ -167,27 +167,27 @@
         <div class="stc"></div>
       </div>
     <script>
-        let a = [1,2,3,4,5,6,[34,43,56]]
-        console.log(a[6][1]);
+        let marks= [89,78,69,83]
 
         let obj = {
-            name:"dishu",
-            number : 2310990161,
+            name:"Dishu",
+            number :2310991610,
             subjects:{
                 sub1:"english",
                 sub2:"hindi",
+                sub3:"maths",
+                sub4:"punjabi"
             },
             getmarks:function(){
-            console.log("get marks function is running");
+            console.log(marks[2]);
             }
         }
-        
-        
         obj.subjects.sub3="computers"
-        obj.getmarks()
         console.log(obj.name);
         console.log(obj.number);
         console.log(obj.subjects);
+        console.log("marks in maths");  
+        obj.getmarks()
     </script>
   </body>
 </html>
