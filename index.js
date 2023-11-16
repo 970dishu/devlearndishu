@@ -33,7 +33,7 @@ function calculate(a,b,operator){
             console.log(a % b);
             break;
         default:
-            console.log(wrong operator);
+            console.log(wrong_operator);
 
     }
 
